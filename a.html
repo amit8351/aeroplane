@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.ufo{
+     position: absolute;
+     top: 20%;
+     right: 20%;
+     z-index: -99;
+     animation: ufo 10s linear infinite reverse;
+     
+}
+@keyframes ufo{
+    from{right: -500px;}
+    to{ right: 102%;}
+}
+ .ufo img{
+    width: 200px;
+ }
+ .road{
+    height: 150px;
+    width: 100vw;
+    position: absolute;
+    background-color: black;
+    top: 70%;
+ }
+ .line{
+    width: 100vw;
+    height: 30px;
+    position: absolute;
+    background-color:white;
+    top: 80%;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="road"></div>
+     <div class="line"></div>
+
+    
+    <div class="ufo"><img src="aa.png" alt=""></div>
+
+</body>
+</html>
